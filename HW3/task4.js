@@ -13,9 +13,9 @@ function some(arr, callback) {
           console.log(true) 
           return true}
       }
-    }
     console.log(false); 
     return false
+    }
     }
 
 some(arr, function(item, i, arr) {
