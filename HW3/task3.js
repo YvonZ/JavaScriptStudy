@@ -13,9 +13,9 @@ function every(arr, callback) {
           console.log(false) 
           return false}
       }
-    }
     console.log(true); 
     return true
+    }
     }
 
 every(arr, function(item, i, arr) {
