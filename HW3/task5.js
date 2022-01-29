@@ -6,14 +6,16 @@ function reduce(arr, callback, acc) {
      console.log(arr," is not array");
     } else if (typeof callback != 'function') {
      console.log(callback," is not function");
-    } else {
-     //this;
+    } else if (typeof acc != 'number' && typeof acc != 'string') {
+        console.log(acc," is not number/string");
+    } else  {
+
      for (let i=0; i<arr.length; i++){
             acc=callback(acc,arr[i], i, arr)
       }
-    }
-    console.log(acc); 
-    return acc
+      console.log(acc); 
+      return acc }
+
     }
 
 reduce(arr, function(acc, item, i, arr) {
